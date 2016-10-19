@@ -1,0 +1,119 @@
+@charset "utf-8";
+/******************************************************Inicio pagina index*********************************************************/
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+#box{ /*div geral*/
+    width: 1354px;
+    height: 771px;
+   
+}
+
+#header{ /*div cabeçalho*/
+    
+    width:1354px; /*definimos a largura da div*/
+    height:100px; /*altura da div*/
+    background: blueviolet;/*url(img/filete_topo.jpg); /*imagem de fundo da div*/
+}
+
+/********************Início Login****************************/
+#login{
+    float: left;
+    margin-left: 850px;
+    margin-top: -40px;
+}
+
+form label{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:white;
+    font-weight:bold;
+    float:left;
+}
+    
+.login-input{
+    background-color:#f2f2f2;
+    border:1px solid #000;
+    padding:5px;
+}
+
+.login-input:hover{
+    background-color:#e1e1e1;
+    border:1px solid #333;
+    padding:5px;
+}
+
+.login-input:focus{
+    background-color:palegreen;
+    border:1px solid #900;
+    padding:7px;
+}
+
+.login-submit{
+    padding:5px;
+    background-color:green;
+    border:1px solid #000;
+    color:#fff;
+    font-weight:bold;
+}
+
+.login-submit:hover{
+    padding:5px;
+    background-color:forestgreen;
+    border:1px solid green;
+    color:#fff;
+    font-weight:bold;
+    cursor: pointer; 
+}
+
+/****************Final Login***********************/
+
+#content{ /*div conteúdo*/
+    width: 1354px; /*definimos a largura da div*/
+    height: 571px; /*altura da div*/
+    margin-top: 0px; 
+    margin-left: auto;
+    margin-botom:0;
+    margin-right: auto;
+    padding-top: 0px; /*espaçamento da div anterior*/
+    /*background: url(img/fundoportal.jpg); /*imagem de fundo da div*/
+}
+
+#content-left{ /*div conteúdo da esquerda*/
+    width:618px; /*definimos a largura da div*/
+    height:515px; /*altura da div*/
+    float:left;  /* O atributo Float é utilizado para fazermos o nosso bloco(div) literalmente flutue e se posicione onde queremos 
+                 na página, quando escolhemos left, dizemos que esse bloco irá se posicionar na parte esquerda da página */
+    margin-top: 30px; /*distancia da margem topo*/
+    margin-left: 30px; /*distancia da margem esquerda*/
+    background-color: red;
+}
+
+/****************Final Cadsatro*************/
+
+#footer{ /*div rodape*/
+    width:1354px; /*definimos a largura da div*/
+    height:100px; /*altura da div*/
+    background: url(img/filete_topo.jpg); /*imagem de fundo da div*/
+}
+
+/******************************************************Final pagina index*********************************************************/
+#aba{
+    width:618px; /*definimos a largura da div*/
+    height:80px; /*altura da div*/
+    float:left;  /* O atributo Float é utilizado para fazermos o nosso bloco(div) literalmente flutue e se posicione onde queremos 
+                 na página, quando escolhemos left, dizemos que esse bloco irá se posicionar na parte esquerda da página */
+    margin-top: 30px; /*distancia da margem topo*/
+    margin-left: 30px; /*distancia da margem esquerda*/
+    background-color: red;
+}
+
+#aba ul{
+    margin-left: 50px;  
+}
+
+#aba ul li{
+  
+}

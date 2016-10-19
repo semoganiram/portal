@@ -1,0 +1,357 @@
+@charset "utf-8";
+/******************************************************Inicio pagina index*********************************************************/
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+#box{ /*div geral*/
+    width: 1354px;
+    height: 771px;
+   
+}
+
+#header{ /*div cabeçalho*/
+    
+    width:1354px; /*definimos a largura da div*/
+    height:100px; /*altura da div*/
+    background:url(img/filete_topo.jpg); /*imagem de fundo da div*/
+}
+
+/********************Início Login****************************/
+#login{
+    float: left;
+    margin-left: 850px;
+    margin-top: -40px;
+}
+
+form label{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    color:white;
+    font-weight:bold;
+    float:left;
+}
+    
+.login-input{
+    background-color:#f2f2f2;
+    border:1px solid #000;
+    padding:5px;
+}
+
+.login-input:hover{
+    background-color:#e1e1e1;
+    border:1px solid #333;
+    padding:5px;
+}
+
+.login-input:focus{
+    background-color:palegreen;
+    border:1px solid #900;
+    padding:7px;
+}
+
+.login-submit{
+    padding:5px;
+    background-color:green;
+    border:1px solid #000;
+    color:#fff;
+    font-weight:bold;
+}
+
+.login-submit:hover{
+    padding:5px;
+    background-color:forestgreen;
+    border:1px solid green;
+    color:#fff;
+    font-weight:bold;
+    cursor: pointer; 
+}
+
+/****************Final Login***********************/
+
+#content{ /*div conteúdo*/
+    width: 1354px; /*definimos a largura da div*/
+    height: 571px; /*altura da div*/
+    margin-top: 0px; 
+    margin-left: auto;
+    margin-bottom: 0px;
+    margin-right: auto;
+    padding-top: 0px; /*espaçamento da div anterior*/
+    background: url(img/fundoportal.jpg); /*imagem de fundo da div*/
+}
+
+#content-left{ /*div conteúdo da esquerda*/
+    width:618px; /*definimos a largura da div*/
+    height:515px; /*altura da div*/
+    float:left;  /* O atributo Float é utilizado para fazermos o nosso bloco(div) literalmente flutue e se posicione onde queremos 
+                 na página, quando escolhemos left, dizemos que esse bloco irá se posicionar na parte esquerda da página */
+    margin-top: 30px; /*distancia da margem topo*/
+    margin-left: 30px; /*distancia da margem esquerda*/
+    /*background-color: blue;*/
+}
+
+/****************Final Cadsatro*************/
+
+#footer{ /*div rodape*/
+    width:1354px; /*definimos a largura da div*/
+    height:100px; /*altura da div*/
+    background: url(img/filete_topo.jpg); /*imagem de fundo da div*/
+}
+
+/******************************************************Final pagina index*********************************************************/
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Titillium Web', sans-serif;
+  /*line-height: 1.5;*/
+  color: #444;
+  font-size: 14px;
+}
+p{
+  padding: 0 10px;
+}
+
+.tabs-container {
+  position: relative;
+  height: 360px;
+  max-width: 98%;
+  margin: 0 auto;
+}
+.tabs-container p{
+  margin: 0;
+  padding: 0;
+}
+.tabs-container:after {
+  content: '.';
+  display: block;
+  clear: both;
+  height: 0;
+  font-size: 0;
+  line-height: 0;
+  visibility: none;
+}
+input.tabs {
+  display: none;
+}
+input.tabs + label {
+  line-height: 40px;
+  padding: 0 20px;
+  float: left;
+
+  background:green;
+  color: #fff;
+  cursor: pointer;
+  transition: background ease-in-out .3s;
+}
+input.tabs:checked + label {
+  color: #000;
+  background: darkgreen;
+}
+input.tabs + label + div {
+  width: 98%;
+  opacity: 0;
+  position: absolute;
+  background: palegreen;
+  top: 40px;
+  left: 0;
+  height: 470px;
+  padding: 10px;
+  z-index: -1;
+  transition: opacity ease-in-out .3s;
+}
+input.tabs:checked + label + div {
+  opacity: 1;
+  z-index: 1000;
+}
+
+/****************teste abas************************/
+
+#desc_ind{   /*estou alinhando as divs*/
+float:left;
+}
+#calculadora{
+float:right;
+}
+
+#desc_ind{ /*estou definindo as cores e as fontes que vou usar nas divs*/
+margin:2px;
+/*background:#ddd;*/
+width:280px;
+height:auto !important;
+min-height:446px;
+height:200px;
+float:left;
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color:black;
+}
+
+#calculadora{
+margin:2px;
+/*background:#ddd;*/
+width:280px;
+height:auto !important;
+min-height:446px;
+height:200px;
+float:left;
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color:black;        
+}
+
+
+
+.negrito { /*criei uma classe para poder usar negrito nos textos*/
+ font-weight: bold;
+}
+
+.cadastro1{ /*essas 3 classes abaixo dão o estilo do form da calculadora*/
+    background-color:#f2f2f2;
+    border:1px solid #000;
+    padding:5px;
+}
+
+.cadastro1:hover{ 
+    background-color:#e1e1e1;
+    border:1px solid #333;
+    padding:5px;
+}
+
+.cadastro1:focus{
+    background-color:palegreen;
+    border:1px solid #900;
+    padding:7px;
+}
+
+#calc_dados{ /*estou definindo onde vai ficar os forms da div calculadora, e o tamanho das letras na div calc_dados*/
+    margin-left: 50px;
+    font-size:14px;
+}
+
+#desc_resultado{
+    margin-left: 50px;
+}
+
+#descricao-aba2{
+    height: 100%;
+    width: 46%;
+    float: left;
+}
+#calculadora-aba2{
+    width: 46%;
+    height: 100%;
+    float: right;
+}
+#descricao-aba3{
+    height: 100%;
+    width: 46%;
+    float: left;
+}
+#calculadora-aba3{
+    width: 46%;
+    height: 100%;
+    float: right;
+}
+
+#calc_borda{
+    width: 225px;
+    height: 325px;
+    background: lightsteelblue;
+    margin-left: 50px;
+    border-radius: 5px;
+    border-width: thin;
+    border-style: solid;
+    border-color: black;
+}
+
+#calc_borda_conteudo{
+    background: lavender;
+    width: 210px;
+    height: 279px;
+    margin-top: 23px;
+}
+
+#calc_img{  
+   width: 5px;
+   height: 5px;
+   margin-top: 10px;
+   margin-left: 16px;
+}
+
+#label_calc{
+    margin-top: -15px;
+    margin-left: 20px;
+}
+
+.resultado input, .resultado textarea { 
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+    display:block;
+    height: 50px;
+    width: 190px;
+}
+.resultado input:focus, .resultado textarea:focus {
+    background: #fff; 
+    border:1px solid #555; 
+    box-shadow: 0 0 3px #aaa; 
+    display:block;
+}
+
+.resultado ul {
+    list-style-type:none;
+    list-style-position:outside;
+    margin:0px;
+    padding:10px;
+}
+
+#desc_resultado{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.btncalcular{
+    padding:5px;
+    background-color:lightsteelblue;
+    border-radius: 1px solid #000;
+    color:black;
+    font-weight:bold;
+    margin-left: 40px;
+}
+
+.btncalcular:hover{
+    padding:5px;
+    background-color:#FFF68F;
+    border-radius: 1px solid green;
+    color:black;
+    font-weight:bold;
+    cursor: pointer; 
+}
+
+.btnlimpar{
+    padding:5px;
+    background-color:lightsteelblue;
+    border-radius:1px solid #000;
+    color:black;
+    font-weight:bold;
+    margin-left: 0px;
+}
+
+.btnlimpar:hover{
+    padding:5px;
+    background-color:#FFF68F;
+    border-radius:1px solid green;
+    color:black;
+    font-weight:bold;
+    cursor: pointer; 
+}
+
+#calc_conteudo_forms{
+    margin-top: -3px;
+    margin-left: 20px;
+}
