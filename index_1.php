@@ -193,40 +193,59 @@ function getObj(idObj)
                                 </div>
                          
                                 <div id="calculadora">
-                                    <!-- fiz o form dentro da div calculadora e peguei os estilos do login-submit pro botão enviar dados,
-                                    usei a classe cadastro1 para definir os estilos -->
-                                    
-                                
-                                        <div id="calc_dados">
-                                            <p><span class="negrito"> Margem Bruta</span></p>
-                                           <form method="post" action="calc_dados.php">
-                                              <label for="nome"><font color="black"><br>Receita Bruta</br></font></label>
-                                              <input type="text" id="nome" name="nome" class="cadastro1" style="height:20px" /><br /><br/>
+                                 
+                                    <div id="calc_borda">
+                                        <div id="calc_img">
+                                            <img src="img/calc_234.png" width="15" height="20"></img>
+                                            <div id="label_calc">
+                                                <label>Calculadora</label>
+                                            </div>           
+                                        </div>
+                                        <div id="calc_borda_conteudo">
+                                            <div id="calc_conteudo_resultado">
+                                                <form class="resultado" action="" method="post" name="result">
+                                                    <ul>
+                                                        <li>
+                                                          <span class="required_notification"></span>
+                                                        </li>
+                                                        <li>
+                                                         <label for="result"></label>
+                                                               <input type="text" name="name" />
+                                                        </li>
+                                                    </ul>
+                                                </form>
+                                            </div>
+                                            
+                                            <div id="calc_conteudo_forms">
+                                             <form method="post" action="calc_dados.php">
+                                                 <label for="nome" style="font-size: 12px"><font color="black">Receita Bruta</font></label></br>
+                                                 <input type="text" id="nome" name="nome" class="resultado" style="height:20px; width: 100px" /></br></br>
                                               
-                                              <p><span class="negrito"> Custo Operacional Efetivo</span></p>  
+                                              <label style="font-size: 12px; color: black"> Custo Operacional Efetivo</span></label>  
                                               
                                            
-                                              <br><label for="descricao"><font color="black">Custos Fixos</font></label></br>
-                                              <input type="text" id="descricao" name="descricao" class="cadastro1" style="height:20px" /><br /><br/>
+                                              <br><br><label for="descricao" style="font-size: 12px"><font color="black">Custos Fixos</font></label></br>
+                                              <input type="text" id="descricao" name="descricao" class="resultado" style="height:20px; width: 100px" /><br /><br/>
                                               
-                                              <br><label for="descricao"><font color="black">Custos Variáveis</font></label></br>
-                                              <input type="text" id="descricao" name="descricao" class="cadastro1" style="height:20px" /><br /><br/>
-                                              <input type="submit" name="submit" value="Enviar Dados" class="login-submit"/><br /><br/>
-                                              
-                                              <br><label for="descricao"><font color="black">RESULTADO</font></label>
-                                              <input type="text" id="descricao" name="descricao" class="cadastro1" style="height:20px" /><br /><br/>
-                                              
-                                             
-                                              
-                                          </form>
+                                              <label for="descricao" style="font-size:12px"><font color="black">Custos Variáveis</font></label>
+                                              <br><input type="text" id="descricao" name="descricao" class="resultado" style="height:20px; width: 100px"/></br></br>
+                                              <input type="reset" name="clear" value="Limpar" class="btn"/>
+                                              <input type="submit" name="submit" value="Calcular" class="btn"/>
+                                                </form>
+                                                
+                                            </div>
+                                            
                                         </div>
-                                    
-                                    <div id="desc_resultado">
-                                               <p style="text-align: justify"><span class="negrito"> Se igual a zero representa o ponto 
+                                    </div>  
+                                
+                            <div id="desc_resultado">
+                                               <p style="text-align: justify"><span class="negrito"> RESULTADO: Se igual a zero representa o ponto 
                                                de fechamento da empresa, se negativo, não está cobrindo as despesas no curto prazo, se positivo,
                                                o fluxo de caixa positivo (dinheiro no bolso). 
                                                </p>
-                                    </div>
+                                    </div>            
+                                    
+                                    
                                 </div>
                             </div>
 
@@ -240,21 +259,46 @@ function getObj(idObj)
                                             É o percentual de terneiros desmamados do total de fêmeas acasaladas.
                                     </p>    
                                 </div>
-                                <div id="calculadora-aba2">
-                                    <h3 style="text-align: left;color: black"><strong>Taxa de Desmame</strong></h3><br/>
-                                        <form method="post" action="calc_dados.php">
-                                           <br><label for="nome"><font color="black"><strong>Número de terneiros desmamados</strong></font></label></br>
-                                           <input type="text" id="txt1-aba2" name="txt-aba2" class="cadastro-aba2" style="height:20px" /><br/>
+                                <div id="calculadora">
+                                 
+                                    <div id="calc_borda">
+                                        <div id="calc_img">
+                                            <img src="img/calc_234.png" width="15" height="20"></img>
+                                            <div id="label_calc">
+                                                <label>Calculadora</label>
+                                            </div>           
+                                        </div>
+                                        <div id="calc_borda_conteudo">
+                                            <div id="calc_conteudo_resultado">
+                                                <form class="resultado" action="" method="post" name="result">
+                                                    <ul>
+                                                        <li>
+                                                          <span class="required_notification"></span>
+                                                        </li>
+                                                        <li>
+                                                         <label for="result"></label>
+                                                               <input type="text" name="name" />
+                                                        </li>
+                                                    </ul>
+                                                </form>
+                                            </div>
+                                            
+                                            <div id="calc_conteudo_forms">
+                                             <form method="post" action="calc_dados.php">
+                                                 <label for="nome" style="font-size: 12px"><font color="black">Número de terneiros desmamados </font></label></br>
+                                                 <input type="text" id="nome" name="nome" class="resultado" style="height:20px; width: 100px" /></br></br>
                                            
-                                           <br><label for="descricao"><font color="black">Fêmeas acasaladas</font></label></br>
-                                           <input type="text" id="txt2-aba2" name="txt-aba2" class="cadastro-aba2" style="height:20px" /><br /><br/>
-                                           
-                                           <label for="descricao"><font color="black">RESULTADO</font></label>
-                                           <br><input type="text" id="resultado-aba2" name="descricao" class="cadastro-aba2" style="height:20px" /></br><br /><br/>
-
-
-
-                                        </form>
+                                              <br><br><label for="descricao" style="font-size: 12px"><font color="black">Fêmeas Acasaladas</font></label></br>
+                                              <input type="text" id="descricao" name="descricao" class="resultado" style="height:20px; width: 100px" /><br /><br/>
+                                       
+                                              <input type="reset" name="clear" value="Limpar" class="btn"/>
+                                              <input type="submit" name="submit" value="Calcular" class="btn"/>
+                                                </form>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>                                                                                     
                                 </div>
                             </div>
 
@@ -270,19 +314,46 @@ function getObj(idObj)
                                             do rebanho, exprimindo sua capacidade de gerar excedente para o abate.
                                     </p>
                                 </div>
-                                <div id="calculadora-aba3">
-                                    <h3 style="text-align: left;color: black"><strong>Taxa de Desfrute</strong></h3><br/>
-                                        <form method="post" action="calc_dados.php">
-                                           <br><label for="nome"><font color="black"><strong>Número de cabeças abatidas</strong></font></label></br>
-                                           <input type="text" id="txt1-aba3" name="txt-aba3" class="cadastro-aba2" style="height:20px" /><br/>
+                               <div id="calculadora">
+                                 
+                                    <div id="calc_borda">
+                                        <div id="calc_img">
+                                            <img src="img/calc_234.png" width="15" height="20"></img>
+                                            <div id="label_calc">
+                                                <label>Calculadora</label>
+                                            </div>           
+                                        </div>
+                                        <div id="calc_borda_conteudo">
+                                            <div id="calc_conteudo_resultado">
+                                                <form class="resultado" action="" method="post" name="result">
+                                                    <ul>
+                                                        <li>
+                                                          <span class="required_notification"></span>
+                                                        </li>
+                                                        <li>
+                                                         <label for="result"></label>
+                                                               <input type="text" name="name" />
+                                                        </li>
+                                                    </ul>
+                                                </form>
+                                            </div>
+                                            
+                                            <div id="calc_conteudo_forms">
+                                             <form method="post" action="calc_dados.php">
+                                                 <label for="nome" style="font-size: 12px"><font color="black">Nº de cabeças abatidas </font></label></br>
+                                                 <input type="text" id="nome" name="nome" class="resultado" style="height:20px; width: 100px" /></br></br>
                                            
-                                           <br><label for="descricao"><font color="black">Número de animais no rebanho(estoque inicial)</font></label></br>
-                                           <input type="text" id="txt2-aba3" name="txt-aba3" class="cadastro-aba2" style="height:20px" /><br /><br/>
-                                           
-                                           <label for="descricao"><font color="black">RESULTADO</font></label>
-                                           <br><input type="text" id="resultado-aba3" name="resultado-aba3" class="cadastro-aba2" style="height:20px" /></br><br /><br/>
-                                           
-                                        </form>
+                                              <br><br><label for="descricao" style="font-size: 12px"><font color="black">Nº de animais no rebanho (estoque inicial) * 100 </font></label></br>
+                                              <input type="text" id="descricao" name="descricao" class="resultado" style="height:20px; width: 100px" /><br /><br/>
+                                       
+                                              <input type="reset" name="clear" value="Limpar" class="btn"/>
+                                              <input type="submit" name="submit" value="Calcular" class="btn"/>
+                                                </form>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                    </div>                                                                                     
                                 </div>
                             </div>
 
@@ -293,7 +364,7 @@ function getObj(idObj)
             
             <div id="footer">
                 rodape
-            </div> <!--fina div rodape-->
+            </div> <!--final div rodape-->
         </div> <!--final div box-->
     </body>
 </html>
